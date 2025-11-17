@@ -249,6 +249,24 @@ I used DinCahill's [fork](https://github.com/DinCahill/RcloneBrowser) as a base 
 
 I fixed whatever I found not working and added various tweaks enhancing functionality. I recompiled and repackaged everything using latest Qt (5.13.1) and latest platforms' compilers. This on its own fixed some issues and added new features like support for dark mode in macOS. Then followed with more fixes and more features. Rclone Browser was great again:) and is getting better.
 
+I forked Kapitainsky's [Repo]() as a base for my version. Begining with version 1.8.1 my goal is to update the project to QT6 as well as release Apple Silicon binaries 
+
+Roadmap
+-------
+| Version | Goal                                                                                               | Status |
+|---------|----------------------------------------------------------------------------------------------------|--------|
+| 1.8.1   | Release Apple Silicon Binary                                                                       |        |
+| 1.8.2   | Release Full Suite of packages (eg Windows, Apple, Linux)                                          |        |
+| 1.8.3   | Add Reauthentication Button to UI for backends<br>that you need to peiriodically reauthenticate to |        |
+| 1.9.0   | QT 6 Port                                                                                          |        |
+
+
+
+
+
+
+
+
 [1]: https://travis-ci.org/kapitainsky/RcloneBrowser
 [2]: https://ci.appveyor.com/project/kapitainsky/RcloneBrowser
 [3]: https://github.com/ryanvanmass/RcloneBrowser/releases
