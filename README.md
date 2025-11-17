@@ -251,9 +251,9 @@ I fixed whatever I found not working and added various tweaks enhancing function
 
 [1]: https://travis-ci.org/kapitainsky/RcloneBrowser
 [2]: https://ci.appveyor.com/project/kapitainsky/RcloneBrowser
-[3]: https://github.com/kapitainsky/RcloneBrowser/releases
-[4]: https://github.com/kapitainsky/RcloneBrowser/releases/latest
-[5]: https://github.com/kapitainsky/RcloneBrowser/blob/master/LICENSE
+[3]: https://github.com/ryanvanmass/RcloneBrowser/releases
+[4]: https://github.com/ryanvanmass/RcloneBrowser/releases/latest
+[5]: https://github.com/ryanvanmass/RcloneBrowser/blob/master/LICENSE
 [6]: https://www.videolan.org
 [7]: https://aur.archlinux.org/packages/rclone-browser
 [8]: https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes
