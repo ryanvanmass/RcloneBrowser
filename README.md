@@ -1,6 +1,6 @@
 <img src="https://github.com/kapitainsky/RcloneBrowser/wiki/images/RcloneBrowserLongLogo1.png" width="80%" />
 
-[![Travis CI Build Status][img1]][1] [![AppVeyor Build Status][img2]][2] [![Downloads][img3]][3] [![Release][img4]][4] <img src="https://img.shields.io/badge/Qt-cmake-green.svg"> [![Codacy Badge](https://api.codacy.com/project/badge/Grade/e22f828fc0c94dcf9ddb3d38701d177f)](https://www.codacy.com/manual/kapitainsky/RcloneBrowser?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kapitainsky/RcloneBrowser&amp;utm_campaign=Badge_Grade) [![License][img5]][5] [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/kapitainsky)
+[![Downloads][img3]][3] [![Release][img4]][4] <img src="https://img.shields.io/badge/Qt-cmake-green.svg"> [![License][img5]][5]
 
 Rclone browser
 ==============
@@ -10,20 +10,20 @@ Supports macOS, GNU/Linux, BSD family and Windows.
 
 Table of contents
 -------------------
-*   [Features](https://github.com/kapitainsky/RcloneBrowser#features)
-*   [Sample screenshots](https://github.com/kapitainsky/RcloneBrowser#sample-screenshots)
-*   [How to get it](https://github.com/kapitainsky/RcloneBrowser#how-to-get-it)
-*   [Why AppImage only for Linux](https://github.com/kapitainsky/RcloneBrowser#why-appimage-only-for-linux)
-*   [Build instructions](https://github.com/kapitainsky/RcloneBrowser#build-instructions)
-    *   [Linux](https://github.com/kapitainsky/RcloneBrowser#linux)
-    *   [FreeBSD](https://github.com/kapitainsky/RcloneBrowser#freebsd)
-    *   [OpenBSD](https://github.com/kapitainsky/RcloneBrowser#openbsd)
-    *   [NetBSD](https://github.com/kapitainsky/RcloneBrowser#netbsd)
-    *   [macOS](https://github.com/kapitainsky/RcloneBrowser#macos)
-    *   [Windows](https://github.com/kapitainsky/RcloneBrowser#windows)
-*   [Portable vs standard mode](https://github.com/kapitainsky/RcloneBrowser#portable-vs-standard-mode)
-*   [History](https://github.com/kapitainsky/RcloneBrowser#history)
-*   [Code signing certificates donations](https://github.com/kapitainsky/RcloneBrowser#code-signing-certificates-donations)
+*   [Features](https://github.com/ryanvanmass/RcloneBrowser#features)
+*   [Sample screenshots](https://github.com/ryanvanmass/RcloneBrowser#sample-screenshots)
+*   [How to get it](https://github.com/ryanvanmass/RcloneBrowser#how-to-get-it)
+*   [Why AppImage only for Linux](https://github.com/ryanvanmass/RcloneBrowser#why-appimage-only-for-linux)
+*   [Build instructions](https://github.com/ryanvanmass/RcloneBrowser#build-instructions)
+    *   [Linux](https://github.com/ryanvanmass/RcloneBrowser#linux)
+    *   [FreeBSD](https://github.com/ryanvanmass/RcloneBrowser#freebsd)
+    *   [OpenBSD](https://github.com/ryanvanmass/RcloneBrowser#openbsd)
+    *   [NetBSD](https://github.com/ryanvanmass/RcloneBrowser#netbsd)
+    *   [macOS](https://github.com/ryanvanmass/RcloneBrowser#macos)
+    *   [Windows](https://github.com/ryanvanmass/RcloneBrowser#windows)
+*   [Portable vs standard mode](https://github.com/ryanvanmass/RcloneBrowser#portable-vs-standard-mode)
+*   [History](https://github.com/ryanvanmass/RcloneBrowser#history)
+*   [Code signing certificates donations](https://github.com/ryanvanmass/RcloneBrowser#code-signing-certificates-donations)
 
 Features
 --------
@@ -113,8 +113,6 @@ FreeBSD has its version available from [freshports](https://www.freshports.org/n
 
 And if you would like to run it directly on your NAS (e.g. Synology or QNAP) there is docker version provided by @romancin - https://github.com/romancin/rclonebrowser-docker
 
-*Note: For Windows and macOS it would be much nicer (to avoid pop ups about unknown software origin) to properly sign released packages with code signing certificates however it does not come free even for open source software. I looked at it and it seems that to get keys for both systems for the next three years would cost about $500 (3x$99 for [Apple developer account](https://developer.apple.com/support/purchase-activation/) and $200 for cheapest Comodo [code signing certificate](https://comodosslstore.com/uk/code-signing). I am not prepared to budget it as I do this only as a hobby and I am entirely happy with this software as it is. If Rclone Browser users think that properly signed software would be beneficial for them they can [chip in](https://www.paypal.me/kapitainsky) some cash for it. If I raise required amount I will get keys. If not I will give money to some charity.*
-
 Why AppImage only for Linux
 ----------------------------
 Starting with version 1.7.0 Linux binaries are only available in [AppImage](https://appimage.org/) format. Some explanation on this... 
@@ -153,7 +151,7 @@ Build instructions
     *   **RHEL/CentOS**: `sudo yum -y install git gcc-c++ cmake make qt5-qtdeclarative`
     *   **Fedora**: `sudo dnf -y install git g++ cmake make qt5-qtdeclarative-devel`
     *   **Arch/Manjaro**: `sudo pacman -Sy --noconfirm --needed git gcc cmake make qt5-declarative`
-2.  Clone source code from this repo `git clone https://github.com/kapitainsky/RcloneBrowser.git`
+2.  Clone source code from this repo `git clone https://github.com/ryanvanmass/RcloneBrowser.git`
 3.  Go to source folder `cd RcloneBrowser`
 4.  Create new build folder - `mkdir build && cd build`
 5.  Run `cmake ..` from build folder to create makefile
@@ -162,7 +160,7 @@ Build instructions
 
 ### FreeBSD
 1.  Install dependencies `sudo pkg install git cmake qt5-buildtools qt5-declarative qt5-qmake`
-2.  Clone source code from this repo `git clone https://github.com/kapitainsky/RcloneBrowser.git`
+2.  Clone source code from this repo `git clone https://github.com/ryanvanmass/RcloneBrowser.git`
 3.  Go to source folder `cd RcloneBrowser`
 4.  Create new build folder - `mkdir build && cd build`
 5.  Run `cmake ..` from build folder to create makefile
@@ -173,7 +171,7 @@ Build instructions
 
 ### OpenBSD
 1.  Install dependencies `sudo pkg_add git cmake qt5`
-2.  Clone source code from this repo `git clone https://github.com/kapitainsky/RcloneBrowser.git`
+2.  Clone source code from this repo `git clone https://github.com/ryanvanmass/RcloneBrowser.git`
 3.  Go to source folder `cd RcloneBrowser`
 4.  Create new build folder - `mkdir build && cd build`
 5.  Run `cmake .. -DCMAKE_PREFIX_PATH:PATH=/usr/local/lib/qt5/cmake` from build folder to create makefile
@@ -184,7 +182,7 @@ Build instructions
 
 ### NetBSD
 1.  Install dependencies `sudo pkgin install git cmake qt5-qtdeclarative`
-2.  Clone source code from this repo `git clone https://github.com/kapitainsky/RcloneBrowser.git`
+2.  Clone source code from this repo `git clone https://github.com/ryanvanmass/RcloneBrowser.git`
 3.  Go to source folder `cd RcloneBrowser`
 4.  Create new build folder - `mkdir build && cd build`
 5.  Run `cmake .. -DCMAKE_PREFIX_PATH:PATH=/usr/pkg/qt5` from build folder to create makefile
@@ -197,7 +195,7 @@ Build instructions
 1.  If you don't have [Homebrew](https://brew.sh/) yet install it `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 2.  You might be asked to install xcode command line tools - do it. This is actuall macOS SDK, headers, and build tools. You don't need full xcode IDE.
 3.  Install dependencies `brew install git cmake rclone qt5`
-4.  Clone source code from this repo `git clone https://github.com/kapitainsky/RcloneBrowser.git`
+4.  Clone source code from this repo `git clone https://github.com/ryanvanmass/RcloneBrowser.git`
 5.  Go to source folder `cd RcloneBrowser`
 6.  Create new build folder - `mkdir build && cd build`
 7.  Run `cmake .. -DCMAKE_PREFIX_PATH:PATH=/usr/local/opt/qt` from build folder to create makefile
@@ -250,13 +248,6 @@ I looked around but could not find anything fully working. Some github users mad
 I used DinCahill's [fork](https://github.com/DinCahill/RcloneBrowser) as a base for my version.
 
 I fixed whatever I found not working and added various tweaks enhancing functionality. I recompiled and repackaged everything using latest Qt (5.13.1) and latest platforms' compilers. This on its own fixed some issues and added new features like support for dark mode in macOS. Then followed with more fixes and more features. Rclone Browser was great again:) and is getting better.
-
-Code signing certificates donations 
----------------------------
-
-If you would like to donate towards code signing keys please feel free to [do it](https://www.paypal.me/kapitainsky). If I don't raise required $500 I will give all money to some charity. Please see my note regarding it at the end of [How to get it](https://github.com/kapitainsky/RcloneBrowser#how-to-get-it) section. I will keep all updated with amount raised.
-
-Raised so far: 6.4 USD (1.3% of the required target)
 
 [1]: https://travis-ci.org/kapitainsky/RcloneBrowser
 [2]: https://ci.appveyor.com/project/kapitainsky/RcloneBrowser
