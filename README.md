@@ -198,10 +198,10 @@ Build instructions
 4.  Clone source code from this repo `git clone https://github.com/ryanvanmass/RcloneBrowser.git`
 5.  Go to source folder `cd RcloneBrowser`
 6.  Create new build folder - `mkdir build && cd build`
-7.  Run `cmake .. -DCMAKE_PREFIX_PATH:PATH=/usr/local/opt/qt` from build folder to create makefile
+7.  Run `cmake .. -DCMAKE_POLICY_VERSION_MINIMUM=3.5` from build folder to create makefile
 8.  Run `make` from build folder to create binary
 9.  Go to yet another newly created build folder `cd build`. Your binary should be here
-10. Package your binary with Qt libraries to create self contained application `/usr/local/opt/qt/bin/macdeployqt rclone-browser.app -executable="rclone-browser.app/Contents/MacOS/rclone-browser" -qmldir=../src/`. Without this step binary won't work without Qt installed
+10. Package your binary with Qt libraries to create self contained application `/opt/homebrew/opt/qt@5/bin/macdeployqt rclone-browser.app -executable="rclone-browser.app/Contents/MacOS/rclone-browser" -qmldir=../src/`. Without this step binary won't work without Qt installed
 
 ### Windows
 1.  Get [Visual Studio 2019][8] - you need "Desktop development with C++" module only
