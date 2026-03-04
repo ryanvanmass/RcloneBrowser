@@ -253,12 +253,12 @@ I forked Kapitainsky's [Repo]() as a base for my version. Begining with version 
 
 Roadmap
 -------
-| Version | Goal                                                                                               | Status |
-|---------|----------------------------------------------------------------------------------------------------|--------|
-| 1.8.1   | Release Apple Silicon Binary                                                                       |        |
-| 1.8.2   | Release Full Suite of packages (eg Windows, Apple, Linux)                                          |        |
-| 1.8.3   | Add Reauthentication Button to UI for backends<br>that you need to peiriodically reauthenticate to |        |
-| 1.9.0   | QT 6 Port                                                                                          |        |
+| Version | Goal                                                                                               |  Status  |
+|---------|----------------------------------------------------------------------------------------------------|----------|
+| 1.8.1   | Release Apple Silicon Binary                                                                       | Complete |
+| 1.8.2   | Release Full Suite of packages (eg Windows, Apple, Linux)                                          |          |
+| 1.8.3   | Add Reauthentication Button to UI for backends<br>that you need to peiriodically reauthenticate to |          |
+| 1.9.0   | QT 6 Port                                                                                          |          |
 
 
 
