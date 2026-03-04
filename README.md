@@ -204,13 +204,29 @@ Build instructions
 10. Package your binary with Qt libraries to create self contained application `/opt/homebrew/opt/qt@5/bin/macdeployqt rclone-browser.app -executable="rclone-browser.app/Contents/MacOS/rclone-browser" -qmldir=../src/`. Without this step binary won't work without Qt installed
 
 ### Windows
-1.  Get [Visual Studio 2019][8] - you need "Desktop development with C++" module only
-2.  Install [CMake][9]
-3.  Install latest Qt v5 (64-bit) from [Qt website][10]. You only need "Qt 5.13.2 Prebuilt Components for MSVC 2017 64-bit" (MSVC 2017 64-bit). Later steps assume you install it in c:\Qt
-4.  Get rclone-browser source code. You either need to install git and clone it or download zip file from [releases][3]
-5.  Go to source folder `cd RcloneBrowser`
-6.  From cmd create new build folder  - `mkdir build` and then `cd build`
-7.  run `cmake -G "Visual Studio 16 2019" -A x64 -DCMAKE_CONFIGURATION_TYPES="Release" -DCMAKE_PREFIX_PATH=c:\Qt\5.13.2\msvc2017_64 .. && cmake --build . --config Release`
+1. Install Chocolety 
+```powershell
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
+2. Install [Visual Studio 2019][8]
+```powershell
+choco install visualstudio2019community
+```
+3. Install [CMake][9]
+```powershell
+choco install cmake
+```
+4. Install [QT V5][10]
+```powershell
+choco install qt5-default
+```
+5. Get rclone-browser source code. You either need to install git and clone it or download zip file from [releases][3]
+6.  Go to source folder `cd RcloneBrowser`
+7.  From cmd create new build folder  - `mkdir build` and then `cd build`
+
+
+
+7.  run `cmake -G "Visual Studio 16 2019" -A arm64 -DCMAKE_CONFIGURATION_TYPES="Release" -DCMAKE_PREFIX_PATH=c:\Qt\5.13.2\msvc2017_64 .. && cmake --build . --config Release`
 8.  run `c:\Qt\5.13.2\msvc2017_64\bin\windeployqt.exe --no-translations --no-angle --no-compiler-runtime --no-svg ".\build\Release\RcloneBrowser.exe"`
 9.  build\Release folder contains now RcloneBrowser.exe binary and all other files required to run it
 10. If your system does not have required MSVC runtime you can install one from Microsoft [website](https://support.microsoft.com/en-gb/help/2977003/the-latest-supported-visual-c-downloads).
